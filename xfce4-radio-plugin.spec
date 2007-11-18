@@ -1,16 +1,15 @@
-%define oname xfce4-radio-plugin
-
 Summary:	Radio plugin for the Xfce panel
-Name:		xfce-radio-plugin
+Name:		xfce4-radio-plugin
 Version:	0.2.1
-Release:	%mkrel 1
-License:	GPL
+Release:	%mkrel 2
+License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-radio-plugin
-Source0:	%{oname}-%{version}.tar.bz2
+Source0:	http://goodies.xfce.org/releases/xfce4-radio-plugin/%{name}-%{version}.tar.bz2
 Requires:	xfce-panel >= 4.3.22
 BuildRequires:	xfce-panel-devel >= 4.3.22
 BuildRequires:	perl(XML::Parser)
+Obsoletes:	xfce-radio-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
@@ -19,7 +18,7 @@ You can turn your radio on/off, tune it to some frequency and manage station
 presets.
 
 %prep
-%setup -qn %{oname}-%{version}
+%setup -q
 
 %build
 %configure2_5x
@@ -29,7 +28,7 @@ presets.
 rm -rf %{buildroot}
 %makeinstall_std 
  
-%find_lang %{oname}
+%find_lang %{name}
 
 %post
 %update_icon_cache hicolor
@@ -40,9 +39,9 @@ rm -rf %{buildroot}
 %clean
 rm -rf %{buildroot}
 
-%files -f %{oname}.lang
+%files -f %{name}.lang
 %defattr(-,root,root)
-%doc AUTHORS COPYING INSTALL NEWS README
+%doc AUTHORS ChangeLog README
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_datadir}/xfce4/panel-plugins/*.desktop 
 %{_libdir}/xfce4/panel-plugins/*
