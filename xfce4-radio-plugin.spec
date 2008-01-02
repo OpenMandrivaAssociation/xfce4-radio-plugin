@@ -10,6 +10,7 @@ Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 Obsoletes:	xfce-radio-plugin
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This is an Xfce panel plugin which allows you to control your V4l radio device.
