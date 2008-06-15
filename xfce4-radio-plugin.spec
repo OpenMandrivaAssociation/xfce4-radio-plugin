@@ -1,11 +1,11 @@
 Summary:	Radio plugin for the Xfce panel
 Name:		xfce4-radio-plugin
-Version:	0.2.1
-Release:	%mkrel 2
+Version:	0.3.0
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-radio-plugin
-Source0:	http://goodies.xfce.org/releases/xfce4-radio-plugin/%{name}-%{version}.tar.bz2
+Source0:	http://goodies.xfce.org/releases/xfce4-radio-plugin/%{name}-%{version}.tar.gz
 Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
