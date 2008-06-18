@@ -1,6 +1,6 @@
 Summary:	Radio plugin for the Xfce panel
 Name:		xfce4-radio-plugin
-Version:	0.3.0
+Version:	0.3.1
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
@@ -30,11 +30,15 @@ rm -rf %{buildroot}
  
 %find_lang %{name}
 
+%if %mdkversion < 200900
 %post
 %update_icon_cache hicolor
+%endif
 
+%if %mdkversion < 200900
 %postun
 %clean_icon_cache hicolor
+%endif
 
 %clean
 rm -rf %{buildroot}
