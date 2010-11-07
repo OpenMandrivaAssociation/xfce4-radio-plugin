@@ -11,6 +11,7 @@ Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-radio-plugin/%{url_ver}
 Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
+BuildRequires:	libxfcegui4-devel
 Obsoletes:	xfce-radio-plugin
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
