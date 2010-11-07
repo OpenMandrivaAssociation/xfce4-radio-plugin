@@ -1,11 +1,13 @@
+%define url_ver %(echo %{version} | cut -c 1-3)
+
 Summary:	Radio plugin for the Xfce panel
 Name:		xfce4-radio-plugin
-Version:	0.4.2
-Release:	%mkrel 3
+Version:	0.4.4
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-radio-plugin
-Source0:	http://goodies.xfce.org/releases/xfce4-radio-plugin/%{name}-%{version}.tar.gz
+Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-radio-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
@@ -26,19 +28,9 @@ presets.
 
 %install
 rm -rf %{buildroot}
-%makeinstall_std 
- 
+%makeinstall_std
+
 %find_lang %{name}
-
-%if %mdkversion < 200900
-%post
-%update_icon_cache hicolor
-%endif
-
-%if %mdkversion < 200900
-%postun
-%clean_icon_cache hicolor
-%endif
 
 %clean
 rm -rf %{buildroot}
