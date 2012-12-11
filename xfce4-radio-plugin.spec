@@ -45,3 +45,96 @@ rm -rf %{buildroot}
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_datadir}/xfce4/panel-plugins/*.desktop 
 %{_libdir}/xfce4/panel-plugins/*
+
+
+%changelog
+* Tue Apr 17 2012 Crispin Boylan <crisb@mandriva.org> 0.5.1-3mdv2012.0
++ Revision: 791560
+- Rebuild
+
+* Mon Apr 09 2012 Crispin Boylan <crisb@mandriva.org> 0.5.1-2
++ Revision: 790093
+- Rebuild for xfce 4.10
+
+* Tue Jun 28 2011 Tomasz Pawel Gajc <tpg@mandriva.org> 0.5.1-1
++ Revision: 687928
+- update to new version 0.5.1
+
+* Tue Jun 28 2011 Tomasz Pawel Gajc <tpg@mandriva.org> 0.5.0-2
++ Revision: 687921
+- rebuild
+
+* Sun May 22 2011 Tomasz Pawel Gajc <tpg@mandriva.org> 0.5.0-1
++ Revision: 677456
+- update to new version 0.5.0
+
+* Sat Mar 12 2011 Tomasz Pawel Gajc <tpg@mandriva.org> 0.4.5-1
++ Revision: 644046
+- update to new version 0.4.5
+
+* Sun Nov 07 2010 Tomasz Pawel Gajc <tpg@mandriva.org> 0.4.4-1mdv2011.0
++ Revision: 594850
+- add missing buildrequires on libxfcegui4-devel
+- update to new version 0.4.4
+- add support for new urlsfor Source0
+- dropl old conditionals in spec file for mdv releases older than 200900
+
+* Fri May 07 2010 Tomasz Pawel Gajc <tpg@mandriva.org> 0.4.2-3mdv2010.1
++ Revision: 543435
+- rebuild for mdv 2010.1
+
+* Mon Sep 21 2009 Thierry Vignaud <tv@mandriva.org> 0.4.2-2mdv2010.0
++ Revision: 446108
+- rebuild
+
+* Thu Mar 19 2009 Tomasz Pawel Gajc <tpg@mandriva.org> 0.4.2-1mdv2009.1
++ Revision: 358205
+- update to new version 0.4.2
+
+* Thu Mar 05 2009 Tomasz Pawel Gajc <tpg@mandriva.org> 0.4.1-2mdv2009.1
++ Revision: 349476
+- rebuild for xfce-4.6.0
+
+* Mon Jan 19 2009 Tomasz Pawel Gajc <tpg@mandriva.org> 0.4.1-1mdv2009.1
++ Revision: 331468
+- update to new version 0.4.1
+
+* Wed Dec 03 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 0.4.0-1mdv2009.1
++ Revision: 309815
+- update to new version 0.4.0
+
+* Sat Oct 18 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 0.3.1-2mdv2009.1
++ Revision: 295006
+- rebuild for new Xfce4.6 beta1
+- update to new version 0.3.1
+- execute scriplets only for mdv older than 2009
+
+* Sun Jun 15 2008 Funda Wang <fwang@mandriva.org> 0.3.0-1mdv2009.0
++ Revision: 219214
+- New version 0.3.0
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Mon Nov 19 2007 Tomasz Pawel Gajc <tpg@mandriva.org> 0.2.1-2mdv2008.1
++ Revision: 110130
+- correct buildrequires
+- new license policy
+- use upstream tarball name as a real name
+- do not package COPYING, NEWS and INSTALL files
+- add ChangeLog ot the docs
+- use upstream name
+
+* Sat Jun 16 2007 Tomasz Pawel Gajc <tpg@mandriva.org> 0.2.1-1mdv2008.0
++ Revision: 40285
+- new version
+
+* Thu May 31 2007 Tomasz Pawel Gajc <tpg@mandriva.org> 0.2.0-4mdv2008.0
++ Revision: 33239
+- drop __libtoolize
+- spec file clean
+- add macros to %%post and %%postun
+
