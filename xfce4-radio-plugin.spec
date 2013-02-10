@@ -3,7 +3,7 @@
 Summary:	Radio plugin for the Xfce panel
 Name:		xfce4-radio-plugin
 Version:	0.5.1
-Release:	%mkrel 3
+Release:	4
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-radio-plugin
@@ -14,7 +14,6 @@ BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
 BuildRequires:	libxfcegui4-devel
 Obsoletes:	xfce-radio-plugin
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This is an Xfce panel plugin which allows you to control your V4l radio device.
@@ -31,16 +30,11 @@ autoconf
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 %find_lang %{name}
 
-%clean
-rm -rf %{buildroot}
-
 %files -f %{name}.lang
-%defattr(-,root,root)
 %doc AUTHORS ChangeLog README
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_datadir}/xfce4/panel-plugins/*.desktop 
