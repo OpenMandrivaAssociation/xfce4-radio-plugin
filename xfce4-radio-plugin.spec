@@ -12,7 +12,7 @@ Patch1:		xfce4-radio-plugin-0.5.1-gold.patch
 Requires:	xfce4-panel >= 4.4.2
 BuildRequires:	xfce4-panel-devel >= 4.4.2
 BuildRequires:	perl(XML::Parser)
-BuildRequires:	libxfcegui4-devel
+BuildRequires:	pkgconfig(libxfcegui4-1.0)
 Obsoletes:	xfce-radio-plugin
 
 %description
