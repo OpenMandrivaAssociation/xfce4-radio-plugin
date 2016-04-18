@@ -3,7 +3,7 @@
 Summary:	Radio plugin for the Xfce panel
 Name:		xfce4-radio-plugin
 Version:	0.5.1
-Release:	7
+Release:	7.1
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
 URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-radio-plugin
@@ -38,4 +38,4 @@ autoconf
 %doc AUTHORS ChangeLog README
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_datadir}/xfce4/panel-plugins/*.desktop 
-%{_libdir}/xfce4/panel-plugins/*
+%{_libexecdir}/xfce4/panel-plugins/*
