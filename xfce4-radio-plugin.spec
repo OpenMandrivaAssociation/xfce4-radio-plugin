@@ -38,4 +38,4 @@ autoconf
 %doc AUTHORS ChangeLog README
 %{_iconsdir}/hicolor/*/apps/*.png
 %{_datadir}/xfce4/panel-plugins/*.desktop 
-%{_libdir}/xfce4/panel-plugins/*
+%{_libexecdir}/xfce4/panel-plugins/*
