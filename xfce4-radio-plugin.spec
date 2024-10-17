@@ -6,7 +6,7 @@ Version:	0.5.1
 Release:	8
 License:	GPLv2+
 Group:		Graphical desktop/Xfce
-URL:		http://goodies.xfce.org/projects/panel-plugins/xfce4-radio-plugin
+URL:		https://goodies.xfce.org/projects/panel-plugins/xfce4-radio-plugin
 Source0:	http://archive.xfce.org/src/panel-plugins/xfce4-radio-plugin/%{url_ver}/%{name}-%{version}.tar.bz2
 Patch1:		xfce4-radio-plugin-0.5.1-gold.patch
 Requires:	xfce4-panel >= 4.4.2
